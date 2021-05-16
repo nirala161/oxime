@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>
+            oxime
+        </title>
+    </head>
+    <body>
+    <h1>Welcome to oxime</h1>
+    <h2>Hello user,<br>
+    <pre>     In this application, I propose to use a mobile phone’s camera to estimate two vital cardiovascular parameters namely,
+         pulse oximeter (SpO2) level and pulse-rate.
+    </pre>
+    </h2>
+    <h1></h1>
+    <h2>
+        Steps :
+    </h2>
+    <p>
+        <ol>
+            <li>
+                click next on the bottom of current page and enter your name and post your video.
+            </li>
+            <li>
+                Place your index finger on mobile's back camera and record a video of approx 20 second by turning on your flashlight.
+            </li>
+            <li>
+                <srtong>Don't choose the prerecoded file do current recording by choosing camcorder option.</srtong>
+            </li>
+            <li>
+                After submitting your video, wait for a time for uploading and processing. (may take couple of minutes depends upon file size)
+            </li>
+            <li>
+                After uploading you will be redirected to result page.
+            </li>
+        </ol>
+    </p>
+    <p>
+        <h3>
+            Instruction :-
+        </h3>
+        <ul>
+            <li>
+                <strong>
+                    Don't move your finger during recording the video and don't keep space between finger and flashlight.
+                </strong>
+            </li>
+            <li>
+                If your video size is higher than 50 MB then program will terminate automatically due to server storage limit.
+            </li>
+            <li>
+                Try to keep video size low as possible by setting up your recording quality for this purpose.
+            </li>
+            <li>
+                The result will depend upon the video you are posting.
+            </li>
+            <li>
+                The results from the developed application follow very closely with standard devices and this is valid for all the ranges of SpO2 values.
+            </li>
+            <li>
+                <strong>
+                    This application is alternative of oximeter, this is not replacable.
+                </strong>
+            </li>
+            <li>
+                <strong>
+                <ul>
+                        Accuracy:
+                    <li> spo2 having 99.4%</li>
+                    <li>pulse rate having 80%</li>
+                </ul>
+                </strong>
+            </li>
+        </ul>
+    </p>
+    <form>
+        <h1>
+        </h1>
+       <h1><input  style="width: 150px; height: 80px;" type="button" onclick="location.href='{% url 'oxime:upload' %}'; return false;"value="next"></h1>
+    </form>
+    </body>
+</html>

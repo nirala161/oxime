@@ -1,0 +1,11 @@
+<div>
+    <ol>
+    {% for x in data %}
+         <li> name={{x.name}}  </li>
+            <ul>
+                <li> spo2={{x.spo2}}   </li>
+                <li> pulse={{x.pulse}} </li>
+            </ul>
+    {% endfor%}
+</ol>
+</div>

@@ -1,0 +1,34 @@
+{% load static %}
+{% if process1 %}
+    <p>processed successfully..</p>
+{% endif %}
+{% if spo2 < 0 and pulse < 50 %}
+<p><h2>Your video was not appropiate for detection .</h2></p>
+<p> Ignore the result</p>
+{% endif %}
+
+{% if process2 %}
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <p><strong>Hello {{name}} ,</strong><pre>
+        Your result :-   </pre>
+        <p>
+            <img src="{% static 'plot.jpg' %}"  alt="Cardiogram" width="800" height="300">
+        </p>
+    </p>
+    <p>
+        <ul>
+            <li>
+               <h3>spo2 : {{spo2}}</h3>
+            </li>
+            <li>
+                <h3>Pulse :{{pulse}}  </h3>
+            </li>
+        </ul>
+    </p>
+    <h1>
+        Thanks!
+    </h1>
+{% endif %}
+
